@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="searchpanel/search.js"></script>
+</head>
+
+<body ng-app="app">
+<div class="row">
+    <div ui-view="menu"
+         style="padding-left: 50px"
+         class="col-xs-3"></div>
+    <div ui-view="panel"
+         class="col-xs-9"></div>
+</div>
+</body>
+</html>
