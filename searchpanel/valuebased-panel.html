@@ -1,3 +1,23 @@
 <div class="row">
     <h4 class="text-primary">Valuebased Search Panel injected</h4>
 </div>
+
+{{$state}}
+{{$log.debug($state.includes('valuebased'))}}
+<div class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#"
+               class="navbar-brand">MyApp</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                {{$log.debug($state.includes('valuebased'))}}
+                <li data-ng-class="{ active: ($state.name === 'valuebased') }"><a ui-sref="index">Home</a></li>
+                <li data-ng-ng-class="{ active: $state.includes('post') }"><a ui-sref="post">Post</a></li>
+                <li data-ng-ng-class="{ active: $state.includes('media') }"><a ui-sref="media">Media</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

@@ -19,7 +19,11 @@ angular.module('search', [
         url: '.valuebased',
         views: {
             'panel@': {
-                templateUrl: 'searchpanel/valuebased-panel.html'
+                templateUrl: 'searchpanel/valuebased-panel.html',
+                controller: function ($scope, $state) {
+                    $scope.contacts = [1, 2, 3];
+                    $scope.state = $state;
+                }
             }
         }
     });
